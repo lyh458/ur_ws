@@ -49,8 +49,8 @@ find_package(catkin REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ur_gazebo
-#  CATKIN_DEPENDS ur_description
+#  LIBRARIES ur_gazebo_1
+#  CATKIN_DEPENDS ur_description_1
 #  DEPENDS system_lib
 )
 
@@ -63,8 +63,8 @@ catkin_package(
 # include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
 ## Declare a cpp library
-# add_library(ur_gazebo
-#   src/${PROJECT_NAME}/ur_gazebo.cpp
+# add_library(ur_gazebo_1
+#   src/${PROJECT_NAME}/ur_gazebo_1.cpp
 # )
 
 ## Declare a cpp executable
@@ -98,7 +98,7 @@ install(DIRECTORY controller DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS ur_gazebo ur_gazebo_node
+# install(TARGETS ur_gazebo_1 ur_gazebo_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
